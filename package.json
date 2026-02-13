@@ -1,23 +1,70 @@
 {
   "name": "dict2json",
-  "displayName": "dict2json",
-  "description": "tranform python dict into standard json format",
+  "displayName": "Dict to JSON",
+  "description": "Convert Python dictionaries to standard JSON format with auto-formatting",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.105.0"
   },
+  "icon": "resource/icon.png",
   "categories": [
+    "Formatters",
     "Other"
   ],
   "activationEvents": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tqd9563/dict2json"
+  },
+  "license": "MIT",
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "dict2json.helloWorld",
-        "title": "Dict to json: Go Go Go"
+        "command": "dict2json.convert",
+        "title": "Dict to JSON: Convert Python Dict to JSON"
+      },
+      {
+        "command": "dict2json.formatJson",
+        "title": "Dict to JSON: Format JSON"
+      },
+      {
+        "command": "dict2json.minifyJson",
+        "title": "Dict to JSON: Minify JSON"
       }
-    ]
+    ],
+    "keybindings": [
+      {
+        "command": "dict2json.convert",
+        "key": "ctrl+alt+j",
+        "mac": "cmd+alt+j",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "dict2json.formatJson",
+        "key": "ctrl+alt+f",
+        "mac": "cmd+alt+f",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "dict2json.minifyJson",
+        "key": "ctrl+alt+m",
+        "mac": "cmd+alt+m",
+        "when": "editorTextFocus"
+      }
+    ],
+    "configuration": {
+      "title": "Dict to JSON",
+      "properties": {
+        "dict2json.indentSize": {
+          "type": "number",
+          "default": 4,
+          "minimum": 1,
+          "maximum": 16,
+          "description": "Number of spaces for JSON indentation (default: 4)"
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
