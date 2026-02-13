@@ -1,5 +1,5 @@
 {
-  "name": "Dict to JSON",
+  "name": "dict-to-SON",
   "displayName": "Dict to JSON",
   "description": "Convert Python dictionaries to standard JSON format with auto-formatting",
   "publisher": "yuiko",
