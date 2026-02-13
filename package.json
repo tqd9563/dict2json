@@ -1,9 +1,9 @@
 {
-  "name": "dict-to-SON",
+  "name": "dict-to-json",
   "displayName": "Dict to JSON",
   "description": "Convert Python dictionaries to standard JSON format with auto-formatting",
   "publisher": "yuiko",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "engines": {
     "vscode": "^1.105.0"
   },
