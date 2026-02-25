@@ -3,7 +3,7 @@
   "displayName": "Dict to JSON",
   "description": "Convert Python dictionaries to standard JSON format with auto-formatting",
   "publisher": "yuiko",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.105.0"
   },
@@ -28,10 +28,6 @@
       {
         "command": "dict2json.formatJson",
         "title": "Dict to JSON: Format JSON"
-      },
-      {
-        "command": "dict2json.minifyJson",
-        "title": "Dict to JSON: Minify JSON"
       }
     ],
     "keybindings": [
@@ -43,12 +39,6 @@
       },
       {
         "command": "dict2json.formatJson",
-        "key": "ctrl+alt+f",
-        "mac": "cmd+alt+f",
-        "when": "editorTextFocus"
-      },
-      {
-        "command": "dict2json.minifyJson",
         "key": "ctrl+alt+m",
         "mac": "cmd+alt+m",
         "when": "editorTextFocus"

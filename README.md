@@ -7,12 +7,19 @@
 将python dict转换为标准json格式
 
 ## Usage
-选中python dict，`cmd+shift+p`打开命令面板，输入命令`Dict to JSON: Convert Python Dict to JSON`即可
+### Python字典转json
+选中python dict，命令面板输入`Dict to JSON: Convert Python Dict to JSON`，或快捷键`Ctrl + Alt + J`（mac电脑为`Cmd + Option + J`）
+
+### Json格式化
+选中json，命令面板输入`Dict to JSON: Format JSON`，或快捷键`Ctrl + Alt + M`（mac电脑为`Cmd + Option + M`）
 
 ## Feature
 - [x] 能够处理复杂的转义字符串
 
 ## Release Note
+[0.0.2] - 2026-02-25
+删除冲突的快捷键
+
 [0.0.1] - 2026-02-13
 初始化版本发布
 
